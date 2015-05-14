@@ -16,8 +16,14 @@ dependencies {
     // compile files ('lib/gexin-rp-sdk-base-2.0.0.26.jar')
     // putting all jars from 'libs' onto compile classpath
     compile fileTree ('src/libs');
+    compile 'org.codehaus.jackson:jackson-mapper-asl:1.8.5'
     compile 'com.google.protobuf:protobuf-java:2.5.0'
+    compile 'commons-codec:commons-codec:1.9'
     compile 'commons-lang:commons-lang:2.6'
-//    compile 'org.apache.logging.log4j:log4j-core:2.0-rc1'
-//    compile 'org.apache.logging.log4j:log4j-api:2.0-rc1'
+    compile 'org.apache.logging.log4j:log4j-core:2.0-rc1'
+    compile 'org.apache.logging.log4j:log4j-api:2.0-rc1'
+    compile 'commons-logging:commons-logging:1.0.3'         // 个推在使用
+    compile 'commons-httpclient:commons-httpclient:3.0.1'   // 个推在使用
+
+
 }
