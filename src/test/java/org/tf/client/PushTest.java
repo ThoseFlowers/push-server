@@ -1,6 +1,7 @@
 package org.tf.client;
 
 import org.tf.client.impl.PushClientImpl;
+import org.tf.constants.PushServerConstants;
 import org.tf.module.PushChannel;
 import org.tf.module.PushRequest;
 
@@ -25,7 +26,7 @@ public class PushTest {
             public void run() {
                 i++;
                 Map<String, String> dataMap = new HashMap<>();
-                dataMap.put("content", "conter: " + i);
+                dataMap.put(PushServerConstants.PUSH_CONTENT, "conter: " + i);
                 PushRequest pushRequest = new PushRequest(PushChannel.GETUI, 10, dataMap);
                 impl.singlePush(pushRequest);
             }

@@ -27,5 +27,4 @@ public class PushRequest {
         this.id = -1;
         this.dataMap = dataMap;
     }
-
 }

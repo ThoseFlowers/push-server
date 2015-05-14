@@ -9,8 +9,6 @@ import org.tf.module.device.GetuiDevice;
 import org.tf.module.message.GetuiPushMessage;
 
 import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @author hezhiyu on 15/5/14.

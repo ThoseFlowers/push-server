@@ -6,6 +6,7 @@ import com.gexin.rp.sdk.base.impl.Target;
 import com.gexin.rp.sdk.template.TransmissionTemplate;
 import org.apache.commons.lang.StringUtils;
 import org.tf.config.GetuiConfig;
+import org.tf.constants.PushServerConstants;
 import org.tf.module.Platform;
 import org.tf.module.device.GetuiDevice;
 
@@ -53,7 +54,7 @@ public class GetuiPushMessage extends AbstractPushMessage {
 
     public SingleMessage getSingleMessage() throws Exception {
         SingleMessage singleMessage = new SingleMessage();
-        singleMessage.setData(buildTransmissionTemplate(dataMap.get("content"), platform));
+        singleMessage.setData(buildTransmissionTemplate(dataMap.get(PushServerConstants.PUSH_CONTENT), platform));
         singleMessage.setOffline(true);
         singleMessage.setPushNetWorkType(0);
         singleMessage.setOfflineExpireTime(60 * 1000);
