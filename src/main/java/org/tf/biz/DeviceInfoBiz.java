@@ -12,8 +12,8 @@ public class DeviceInfoBiz {
         GetuiDevice device = new GetuiDevice();
         device.setClientId(GetuiConfig.CLIENT_ID);
         device.setAppId(GetuiConfig.APP_ID);
-//        device.setPlatform(2);
-        device.setPlatform(1);
+        device.setPlatform(2);
+//        device.setPlatform(1);
         device.setDeviceToken(GetuiConfig.DEVICE_TOKEN);
         return device;
     }
