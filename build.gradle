@@ -1,0 +1,23 @@
+apply plugin: 'jetty'
+apply plugin: 'war'
+apply plugin: 'idea'
+
+group = 'Those Flowers'
+compileJava.options.encoding = 'UTF-8'
+
+war.archiveName = 'ROOT.war'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // declaring arbitrary files as dependencies
+    // compile files ('lib/gexin-rp-sdk-base-2.0.0.26.jar')
+    // putting all jars from 'libs' onto compile classpath
+    compile fileTree ('src/libs');
+    compile 'com.google.protobuf:protobuf-java:2.5.0'
+    compile 'commons-lang:commons-lang:2.6'
+//    compile 'org.apache.logging.log4j:log4j-core:2.0-rc1'
+//    compile 'org.apache.logging.log4j:log4j-api:2.0-rc1'
+}
